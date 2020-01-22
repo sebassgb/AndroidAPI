@@ -6,20 +6,6 @@
     android:background="#F5F5DC"
     >
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="34dp"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/buttonPreferences"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@drawable/roundbutton"
-            android:text="@string/preferences" />
-    </LinearLayout>
-
     <TextView
         android:id="@+id/textLogin"
         android:layout_width="wrap_content"
@@ -38,6 +24,20 @@
         android:inputType="textPersonName"
         android:text="@string/input_log"
         android:autofillHints="" tools:targetApi="o" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonPreferences"
+            android:layout_width="0dp"
+            android:layout_height="39dp"
+            android:layout_weight="1"
+            android:background="@drawable/roundbutton"
+            android:text="@string/preferences" />
+    </LinearLayout>
 
     <ImageView
         android:id="@+id/imagePitbull"
