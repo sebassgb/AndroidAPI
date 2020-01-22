@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/log"
+        android:textSize="32sp" />
+
+    <EditText
+        android:id="@+id/editLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:ems="10"
+        tools:ignore="LabelFor"
+        android:inputType="textPersonName"
+        android:text="@string/input_log"
+        android:autofillHints="" tools:targetApi="o" />
+
+    <ImageView
+        android:id="@+id/imagePitbull"
+        android:layout_width="match_parent"
+        android:layout_height="121dp"
+        android:contentDescription="@string/todo"
+        app:srcCompat="@drawable/pitbull" />
+
+    <TimePicker
+        android:id="@+id/timePickerCourses"
+        android:layout_width="match_parent"
+        android:layout_height="109dp"
+        android:timePickerMode="spinner" tools:targetApi="lollipop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonGetText"
+            android:layout_width="20dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="@string/buttonNom" />
+
+        <TextView
+            android:id="@+id/textFromButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/textDate" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonCourses"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:text="@string/faire_les_courses" />
+
+    <Button
+        android:id="@+id/buttonQuitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/quitter" />
+
+</LinearLayout>

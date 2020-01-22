@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">td1giraldo</string>
+    <string name="hello_world">td1 giraldo INSA</string>
+    <string name="td_1">TD 1</string>
+    <string name="log">Login</string>
+    <string name="input_log">User login</string>
+    <string name="todo">TODO</string>
+    <string name="login">Login</string>
+    <string name="title_activity_acheter">Acheter</string>
+    <string name="acheter">Voulez-vous achèter ...?</string>
+    <string name="objet">objet</string>
+    <string name="textDate">Date</string>
+    <string name="buttonNom">Obtenir nom</string>
+    <string name="faire_les_courses">Faire les courses</string>
+    <string name="quitter">Quitter</string>
+
+</resources>
