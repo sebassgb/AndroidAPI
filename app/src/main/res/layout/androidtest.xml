@@ -2,7 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#F5F5DC"
+    >
 
     <TextView
         android:id="@+id/textLogin"
@@ -43,10 +45,13 @@
 
         <Button
             android:id="@+id/buttonGetText"
+            style="@style/Widget.AppCompat.Button"
             android:layout_width="20dp"
-            android:layout_height="80dp"
+            android:layout_height="75dp"
             android:layout_weight="1"
-            android:text="@string/buttonNom" />
+            android:background="@drawable/roundbutton"
+            android:text="@string/buttonNom"
+            android:textColor="@android:color/black" />
 
         <TextView
             android:id="@+id/textFromButton"
@@ -57,17 +62,33 @@
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/buttonCourses"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="63dp"
-        android:text="@string/faire_les_courses" />
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/buttonQuitter"
-        android:layout_width="wrap_content"
+        <Button
+            android:id="@+id/buttonCourses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundbutton"
+            android:text="@string/faire_les_courses"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/quitter" />
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonQuitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/roundbutton"
+            android:text="@string/quitter"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
 
 </LinearLayout>

@@ -30,9 +30,7 @@ public class ListeActivity extends AppCompatActivity {
     TextView showLoginActivity;
     ListView listeCourses;
     ArrayList<String> listItems=new ArrayList<String>();
-    SharedPreferences pref = getApplicationContext().getSharedPreferences("loginName", 0);
 
-    SharedPreferences.Editor editor = pref.edit();
 
     //DEFINING A STRING ADAPTER WHICH WILL HANDLE THE DATA OF THE LISTVIEW
     ArrayAdapter<String> adapter;
