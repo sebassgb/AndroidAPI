@@ -12,6 +12,9 @@
     <string name="textDate">Date</string>
     <string name="buttonNom">Obtenir nom</string>
     <string name="faire_les_courses">Faire les courses</string>
+    <string name="preferences">preferences</string>
+    <string name="preferenceSaved">Votre login :</string>
     <string name="quitter">Quitter</string>
+    <string name="title_activity_preferences">Preferences</string>
 
 </resources>

@@ -18,7 +18,7 @@ import org.json.JSONObject;
 import java.util.concurrent.ExecutionException;
 
 public class MainActivity extends AppCompatActivity {
-    Button   mButton,quitterButton, coursesButton;
+    Button   mButton,quitterButton, coursesButton, preferenceButton;
     TextView mEdit, tLogin;
     TimePicker timeCourses;
 
@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         quitterButton = (Button)findViewById(R.id.buttonQuitter);
         coursesButton = (Button)findViewById(R.id.buttonCourses);
         mButton = (Button)findViewById(R.id.buttonGetText);
+        preferenceButton = (Button)findViewById(R.id.buttonPreferences);
 
 
         //Texts
@@ -43,6 +44,18 @@ public class MainActivity extends AppCompatActivity {
 
         //Widgets TimePicker
         timeCourses = (TimePicker)findViewById(R.id.timePickerCourses);
+
+        preferenceButton.setOnClickListener(new View.OnClickListener()
+        {
+
+            public void onClick(View view)
+            {
+                Intent myIntent = new Intent(view.getContext(), Preferences.class);
+                myIntent.putExtra("loginText", tLogin.getText().toString());
+                startActivity(myIntent);
+            }
+        });
+
 
         mButton.setOnClickListener(
                 new View.OnClickListener()
@@ -62,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
                         SharedPreferences pref = getApplicationContext().getSharedPreferences("loginName", 0);// n'a pas besoin d'etre static
                         SharedPreferences.Editor editor = pref.edit();
                         editor.putString("loginName", tLogin.getText().toString()); // Storing string
+                        editor.commit();
                         Intent myIntent = new Intent(view.getContext(), ListeActivity.class);
                         myIntent.putExtra("loginText", tLogin.getText().toString());
                         startActivity(myIntent);
